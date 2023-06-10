@@ -1,0 +1,15 @@
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\bin\Debug\net6.0\DND3-EmployeeWageProgram.exe
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\bin\Debug\net6.0\DND3-EmployeeWageProgram.deps.json
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\bin\Debug\net6.0\DND3-EmployeeWageProgram.runtimeconfig.json
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\bin\Debug\net6.0\DND3-EmployeeWageProgram.dll
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\bin\Debug\net6.0\DND3-EmployeeWageProgram.pdb
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\obj\Debug\net6.0\DND3-EmployeeWageProgram.csproj.AssemblyReference.cache
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\obj\Debug\net6.0\DND3-EmployeeWageProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\obj\Debug\net6.0\DND3-EmployeeWageProgram.AssemblyInfoInputs.cache
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\obj\Debug\net6.0\DND3-EmployeeWageProgram.AssemblyInfo.cs
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\obj\Debug\net6.0\DND3-EmployeeWageProgram.csproj.CoreCompileInputs.cache
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\obj\Debug\net6.0\DND3-EmployeeWageProgram.dll
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\obj\Debug\net6.0\refint\DND3-EmployeeWageProgram.dll
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\obj\Debug\net6.0\DND3-EmployeeWageProgram.pdb
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\obj\Debug\net6.0\DND3-EmployeeWageProgram.genruntimeconfig.cache
+C:\Users\INS 5570\source\repos\DND3-EmployeeWageProgram\DND3-EmployeeWageProgram\obj\Debug\net6.0\ref\DND3-EmployeeWageProgram.dll
