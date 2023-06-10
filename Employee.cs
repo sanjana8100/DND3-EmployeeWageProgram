@@ -6,15 +6,24 @@
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program On Master Branch");
             Console.WriteLine("Checking whether Employee is present or absent...");
-            int empPresent = 1;
+            int IsPresent = 1;
+            int EmpWagePerHour = 20;
+            int empHrs, empWage;
             Random random = new Random();
             double empCheck = random.Next(0, 3);
-            if (empCheck == empPresent)
+            if (empCheck == IsPresent)
             {
                 Console.WriteLine("Employee is Present");
+                empHrs = 8;
             }
             else
+            {
                 Console.WriteLine("Employee is Absent");
+                empHrs = 0;
+            }
+            empWage = empHrs * EmpWagePerHour;
+            Console.WriteLine("Employee Hours: " + empHrs);
+            Console.WriteLine("Employee Wage: " + empWage);
         }
     }
 }
