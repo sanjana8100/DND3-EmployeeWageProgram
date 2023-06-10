@@ -7,10 +7,9 @@
         public const int EMP_WAGE_PER_HOUR = 20;
         public const int WORKING_DAYS_PER_MONTH = 20;
         public const int TOTAL_WORKING_HOURS = 100;
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Welcome to Employee Wage Computation Program On Master Branch");
 
+        public int ComputeWage()
+        {
             int empHrs, empWagePerDay, empWagePerMonth = 0, totalWorkingDays = 0, totalEmpHours = 0;
             while (totalEmpHours <= TOTAL_WORKING_HOURS && totalWorkingDays < WORKING_DAYS_PER_MONTH)
             {
@@ -37,8 +36,15 @@
                 empWagePerMonth += empWagePerDay;
                 Console.WriteLine("Employee Wage per Day: " + empWagePerDay);
             }
+            return empWagePerMonth;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to Employee Wage Computation Program On Master Branch");
+            Employee employee = new Employee();
+            int MonthlyWage = employee.ComputeWage();
             Console.WriteLine("**********************************************");
-            Console.WriteLine("Emp Wage Per Month : " + empWagePerMonth);
+            Console.WriteLine("Emp Wage Per Month : " + MonthlyWage);
         }
     }
 }
