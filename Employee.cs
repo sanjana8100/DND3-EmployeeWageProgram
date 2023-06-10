@@ -6,13 +6,15 @@
         public const int IS_PART_TIME = 2;
         public const int EMP_WAGE_PER_HOUR = 20;
         public const int WORKING_DAYS_PER_MONTH = 20;
+        public const int TOTAL_WORKING_HOURS = 100;
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program On Master Branch");
 
-            int empHrs, empWagePerDay, empWagePerMonth = 0;
-            for (int day = 0; day <= WORKING_DAYS_PER_MONTH; day++)
+            int empHrs, empWagePerDay, empWagePerMonth = 0, totalWorkingDays = 0, totalEmpHours = 0;
+            while (totalEmpHours <= TOTAL_WORKING_HOURS && totalWorkingDays < WORKING_DAYS_PER_MONTH)
             {
+                totalWorkingDays++;
                 Random random = new Random();
                 double empCheck = random.Next(3);
                 switch ((int)empCheck)
@@ -30,11 +32,12 @@
                         empHrs = 0;
                         break;
                 }
+                totalEmpHours += empHrs;
                 empWagePerDay = empHrs * EMP_WAGE_PER_HOUR;
                 empWagePerMonth += empWagePerDay;
-                Console.WriteLine("Employee Hours: " + empHrs);
                 Console.WriteLine("Employee Wage per Day: " + empWagePerDay);
             }
+            Console.WriteLine("**********************************************");
             Console.WriteLine("Emp Wage Per Month : " + empWagePerMonth);
         }
     }
