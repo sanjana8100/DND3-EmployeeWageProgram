@@ -4,14 +4,11 @@
     {
         public const int IS_FULL_TIME = 1;
         public const int IS_PART_TIME = 2;
-        public const int EMP_WAGE_PER_HOUR = 20;
-        public const int WORKING_DAYS_PER_MONTH = 20;
-        public const int TOTAL_WORKING_HOURS = 100;
 
-        public int ComputeWage()
+        public void ComputeWage(string Company, int EmpWagePerHour, int WorkingDaysPerMonth, int TotalWorkingHours)
         {
             int empHrs, empWagePerDay, empWagePerMonth = 0, totalWorkingDays = 0, totalEmpHours = 0;
-            while (totalEmpHours <= TOTAL_WORKING_HOURS && totalWorkingDays < WORKING_DAYS_PER_MONTH)
+            while (totalEmpHours <= TotalWorkingHours && totalWorkingDays < WorkingDaysPerMonth)
             {
                 totalWorkingDays++;
                 Random random = new Random();
@@ -32,19 +29,36 @@
                         break;
                 }
                 totalEmpHours += empHrs;
-                empWagePerDay = empHrs * EMP_WAGE_PER_HOUR;
+                empWagePerDay = empHrs * EmpWagePerHour;
                 empWagePerMonth += empWagePerDay;
                 Console.WriteLine("Employee Wage per Day: " + empWagePerDay);
             }
-            return empWagePerMonth;
+            Console.WriteLine("**********************************************");
+            Console.WriteLine("Emp Wage Per Month : " + empWagePerMonth);
         }
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program On Master Branch");
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("Enter the Company Name: \n1.TCS\n2.Cognizant\n3.Infosys");
+            int company = Convert.ToInt32(Console.ReadLine());
             Employee employee = new Employee();
-            int MonthlyWage = employee.ComputeWage();
-            Console.WriteLine("**********************************************");
-            Console.WriteLine("Emp Wage Per Month : " + MonthlyWage);
+            switch (company)
+            {
+                case 1:
+                    employee.ComputeWage("TCS",300, 20, 100);
+                    break;
+                case 2:
+                    employee.ComputeWage("Cognizant",500, 23, 120);
+                    break;
+                case 3:
+                    employee.ComputeWage("Infosys",200, 25, 150);
+                    break;
+                default:
+                    Console.WriteLine("Please choose a valid company.");
+                    break;
+            }
+
         }
     }
 }
