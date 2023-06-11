@@ -10,5 +10,6 @@ namespace DND3_EmployeeWageProgram
     {
         public void AddCompanyEmpWage(string Company, int EmpWagePerHour, int WorkingDaysPerMonth, int TotalWorkingHours);
         public void ComputeEmpWage();
+        public int getTotalWage(string Company);
     }
 }

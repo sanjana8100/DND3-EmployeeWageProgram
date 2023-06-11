@@ -16,6 +16,7 @@ namespace DND3_EmployeeWageProgram
             employeeWageBuilder.AddCompanyEmpWage("DMart", 400, 20, 100);
             employeeWageBuilder.AddCompanyEmpWage("Reliance", 100, 40, 200);
             employeeWageBuilder.ComputeEmpWage();
+            Console.WriteLine("Total Wage in DMart Company is: " + employeeWageBuilder.getTotalWage("DMart"));
         }
     }
 }
