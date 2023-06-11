@@ -26,7 +26,7 @@
             foreach(CompanyEmpWage companyEmpWage in this.companyEmpWageList)
             {
                 companyEmpWage.SetTotalEmpWage(this.ComputeEmpWage(companyEmpWage));
-                Console.WriteLine(companyEmpWage.ToString());
+                Console.WriteLine(companyEmpWage.toString());
             }
         }
 

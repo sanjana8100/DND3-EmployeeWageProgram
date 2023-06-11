@@ -17,6 +17,7 @@ namespace DND3_EmployeeWageProgram
             this.EmpWagePerHour = EmpWagePerHour;
             this.WorkingDaysPerMonth = WorkingDaysPerMonth;
             this.TotalWorkingHours = TotalWorkingHours;
+            this.totalEmpWage = 0;
         }
 
         public void SetTotalEmpWage(int totalEmpWage)
@@ -24,7 +25,7 @@ namespace DND3_EmployeeWageProgram
             this.totalEmpWage = totalEmpWage;
         }
 
-        public string ToString()
+        public string toString()
         {
             return "Total Employee Wage in " + this.Company + " Company is: " + this.totalEmpWage;
         }
